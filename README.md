@@ -27,6 +27,11 @@ generate classes for your protobuf messages.
 Generation of new protobuf sources is only required when the protobuf message
 definition is updated.
 
+## Debugging
+
+[Follow this guide](https://code.visualstudio.com/docs/runtimes/unity) to debug
+unity games with Visual Studio Code.
+
 ## Acknowledgements
 This repository is forked from a project started by a Bachelor/Master student
 group at TU Delft.
