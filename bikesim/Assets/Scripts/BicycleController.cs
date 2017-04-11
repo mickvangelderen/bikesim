@@ -8,15 +8,6 @@ using XInputDotNetPure;
 
 public class VizState {
     public float x, y, pitch, lean, yaw, wheelAngle, steer;
-    public VizState(State q) {
-        x = System.Convert.ToSingle(q.x);
-        y = System.Convert.ToSingle(q.y);
-        pitch = 0.0f;
-        lean = System.Convert.ToSingle(q.lean);
-        yaw = System.Convert.ToSingle(q.yaw);
-        wheelAngle = System.Convert.ToSingle(q.wheelAngle);
-        steer = System.Convert.ToSingle(q.steer);
-    }
     public VizState() {
         x = 0.0f;
         y = 0.0f;
@@ -25,14 +16,6 @@ public class VizState {
         yaw = 0.0f;
         wheelAngle = 0.0f;
         steer = 0.0f;
-    }
-    public void SetState(State q) {
-        x = System.Convert.ToSingle(q.x);
-        y = System.Convert.ToSingle(q.y);
-        lean = System.Convert.ToSingle(q.lean);
-        yaw = System.Convert.ToSingle(q.yaw);
-        wheelAngle = System.Convert.ToSingle(q.wheelAngle);
-        steer = System.Convert.ToSingle(q.steer);
     }
     public void SetState(pb.BicyclePoseMessage pose) {
         x = pose.x;
