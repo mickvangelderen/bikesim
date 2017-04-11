@@ -72,7 +72,7 @@ public class SerialThread {
                         System.IO.FileAccess.Write,
                         System.IO.FileShare.Read);
                 Debug.Log(String.Format("writing log to file: {0}", _file.Name));
-            } catch (System.IO.IOException e) {
+            } catch (System.IO.IOException) {
                 ++log_number;
             }
         }

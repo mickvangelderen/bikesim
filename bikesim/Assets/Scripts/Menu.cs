@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour {
     public Canvas mainCanvas;
@@ -15,7 +15,7 @@ public class Menu : MonoBehaviour {
             {
                 GamePrefs.device = serialDeviceInputField.text;
                 if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter)) {
-                    Application.LoadLevel(1);
+                    SceneManager.LoadScene("Main");
                 }
             });
     }

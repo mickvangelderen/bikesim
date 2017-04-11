@@ -2,9 +2,6 @@
 using UnityEngine.UI;
 using System;
 using System.Collections;
-using System.IO;
-using XInputDotNetPure;
-
 
 public class VizState {
     public float x, y, pitch, lean, yaw, wheelAngle, steer;
@@ -33,7 +30,7 @@ public class BicycleController : MonoBehaviour {
     public GameObject rearFrame;
     public GameObject frontFrame;
     public GameObject frontWheel;
-    public Camera camera;
+    public new Camera camera;
     public Text sensorInfo;
     public Text stateInfo;
     public Text countdownInfo;
@@ -60,7 +57,6 @@ public class BicycleController : MonoBehaviour {
 
         // Set component sizes
         const float wheelWidth = 0.01f;
-        const float frameWidth = 0.05f;
         Vector3 v = new Vector3(2*rR, wheelWidth, 2*rR);
         rearWheel.transform.localScale = v;
         v = new Vector3(2*rF, wheelWidth, 2*rF);
