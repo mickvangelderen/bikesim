@@ -21,7 +21,7 @@ and extract the contents to `ignore\protobuf`, issue the following command to
 generate classes for your protobuf messages.
 
 ```cmd
-"ignore\protobuf\ProtoGen\protogen.exe" "-i:bikesim\Assets\proto\simulation.proto" "-o:bikesim\Assets\Scripts\simulation.cs" "-ns:pb"
+"ignore\protobuf\ProtoGen\protogen.exe" "-i:bikesim\Assets\proto\simulation.proto" "-o:bikesim\Assets\Scripts\pb\Messages.cs" "-ns:pb"
 ```
 
 Generation of new protobuf sources is only required when the protobuf message
